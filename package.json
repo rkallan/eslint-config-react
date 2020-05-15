@@ -1,0 +1,40 @@
+{
+    "name": "rkallan-eslint-config-react",
+    "version": "1.0.0",
+    "description": "Eslint Rules React",
+    "files": [
+        "build"
+    ],
+    "main": "build/index.js",
+    "scripts": {
+        "build": "babel src -d build"
+    },
+    "license": "MIT",
+    "author": "Ravi Kallan <r.kallan@upcmail.nl>",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:rkallan/eslint-config-react.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rkallan/eslint-config-react/issues/new",
+        "email": "r.kallan@upcmail.nl"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
+        "prettier": "^2.0.5",
+        "semantic-release": "^17.0.7"
+    },
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/changelog",
+        "@semantic-release/github",
+        "@semantic-release/npm",
+        "@semantic-release/git"
+    ],
+    "dependencies": {
+        "rkallan-prettier-config": "^1.0.4"
+    }
+}
