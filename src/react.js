@@ -1,5 +1,5 @@
 const assign = require("object.assign");
-const baseStyleRules = require("../rkallan-eslint-config/style").rules;
+const baseStyleRules = require("rkallan-eslint-config/build/style").rules;
 
 const dangleRules = baseStyleRules["no-underscore-dangle"];
 
