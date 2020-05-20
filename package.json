@@ -1,9 +1,23 @@
 {
-    "name": "rkallan-eslint-config-react",
+    "name": "rkallan-eslint-config",
     "version": "1.0.0",
     "description": "Eslint Rules React",
+    "keywords": [
+        "style guide",
+        "lint",
+        "es6",
+        "es2015",
+        "es2016",
+        "es2017",
+        "es2018",
+        "react",
+        "jsx"
+    ],
     "license": "MIT",
-    "author": "Ravi Kallan <r.kallan@upcmail.nl>",
+    "author": {
+        "name": "Ravi Kallan",
+        "email": "r.kallan@upcmail.nl"
+    },
     "repository": {
         "type": "git",
         "url": "git@github.com:rkallan/eslint-config-react.git"
@@ -12,15 +26,12 @@
         "url": "https://github.com/rkallan/eslint-config-react/issues/new",
         "email": "r.kallan@upcmail.nl"
     },
+    "main": "index.js",
     "files": [
-        "build"
+        "*.js"
     ],
-    "main": "build/index.js",
-    "scripts": {
-        "build": "babel src -d build"
-    },
     "dependencies": {
-        "rkallan-prettier-config": "^1.0.4"
+        "rkallan-prettier-config": "^2.0.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.8.4",
@@ -30,7 +41,12 @@
         "semantic-release": "^17.0.7"
     },
     "peerDependencies": {
-        "rkallan-eslint-config": "^1.2.0"
+        "rkallan-eslint-config": "~2.0"
+    },
+    "scripts": {
+        "build": "babel src -d build",
+        "build:npm": "babel src -d .",
+        "format": "prettier --write \"./src/**/*\" \"!node_modules/**\""
     },
     "plugins": [
         "@semantic-release/commit-analyzer",
