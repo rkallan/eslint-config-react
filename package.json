@@ -13,40 +13,38 @@
         "react",
         "jsx"
     ],
-    "license": "MIT",
-    "author": {
-        "name": "Ravi Kallan",
+    "bugs": {
+        "url": "https://github.com/rkallan/eslint-config-react/issues/new",
         "email": "r.kallan@upcmail.nl"
     },
     "repository": {
         "type": "git",
         "url": "git@github.com:rkallan/eslint-config-react.git"
     },
-    "bugs": {
-        "url": "https://github.com/rkallan/eslint-config-react/issues/new",
+    "license": "MIT",
+    "author": {
+        "name": "Ravi Kallan",
         "email": "r.kallan@upcmail.nl"
     },
     "main": "index.js",
     "files": [
         "*.js"
     ],
-    "dependencies": {
-        "rkallan-prettier-config": "^2.0.0"
+    "scripts": {
+        "build": "babel src -d build",
+        "build:npm": "babel src -d .",
+        "format": "prettier --write './**/*.{jsx,js,json,css,scss,mdx,md,svg}'"
     },
     "devDependencies": {
         "@babel/cli": "^7.8.4",
         "@babel/core": "^7.9.6",
         "@babel/preset-env": "^7.9.6",
         "prettier": "^2.0.5",
+        "rkallan-prettier-config": "^2.0.0",
         "semantic-release": "^17.0.7"
     },
     "peerDependencies": {
-        "rkallan-eslint-config": "~2.0"
-    },
-    "scripts": {
-        "build": "babel src -d build",
-        "build:npm": "babel src -d .",
-        "format": "prettier --write \"./src/**/*\" \"!node_modules/**\""
+        "rkallan-eslint-config": ">= 1.0.0"
     },
     "plugins": [
         "@semantic-release/commit-analyzer",

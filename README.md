@@ -19,3 +19,5 @@ module.exports = {
     extends: ["./node_modules/rkallan-eslint-config", "./node_modules/rkallan-eslint-config-react"],
 };
 ```
+
+run `npx sort-package-json` to sort package.json
