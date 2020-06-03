@@ -6,6 +6,18 @@
 
 This package needs eslint-config-rkallan
 
+And has the follow packages as peer dependacy
+
+-   eslint
+-   eslint-config-prettier
+-   eslint-config-rkallan
+-   eslint-plugin-jsx-a11y
+-   eslint-plugin-mdx
+-   eslint-plugin-prettier
+-   eslint-plugin-react-hooks
+-   object.assign
+-   react
+
 **Install**:
 
 ```bash
