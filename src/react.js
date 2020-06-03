@@ -1,5 +1,5 @@
 const assign = require("object.assign");
-const baseStyleRules = require("rkallan-eslint-config/style").rules;
+const baseStyleRules = require("eslint-config-rkallan/style").rules;
 
 const dangleRules = baseStyleRules["no-underscore-dangle"];
 
@@ -346,9 +346,9 @@ module.exports = {
         // https://github.com/yannickcr/eslint-plugin-react/blob/ac102885765be5ff37847a871f239c6703e1c7cc/docs/rules/jsx-no-target-blank.md
         "react/jsx-no-target-blank": ["error", { enforceDynamicLinks: "always" }],
 
-        // only .jsx files may have JSX
+        // only .jsx and .mdx files may have JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-        "react/jsx-filename-extension": ["error", { extensions: [".jsx"] }],
+        "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".mdx"] }],
 
         // prevent accidental JS comments from being injected into JSX as text
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
@@ -489,7 +489,7 @@ module.exports = {
             {
                 button: true,
                 submit: true,
-                reset: false,
+                reset: true,
             },
         ],
 

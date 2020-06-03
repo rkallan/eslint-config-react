@@ -4,19 +4,19 @@
 
 ## Usage
 
-This package needs rkallan-eslint-config
+This package needs eslint-config-rkallan
 
 **Install**:
 
 ```bash
-npm install rkallan-eslint-config rkallan-eslint-config-react
+npm install --save-dev eslint-config-rkallan eslint-config-react-rkallan
 ```
 
 **Usage in `.eslintrc.js`**:
 
 ```js
 module.exports = {
-    extends: ["./node_modules/rkallan-eslint-config", "./node_modules/rkallan-eslint-config-react"],
+    extends: ["rkallan", "react-rkallan"],
 };
 ```
 
