@@ -15,13 +15,4 @@ module.exports = {
     },
     extends: ["./react", "./react-a11y", "./react-hooks"],
     plugins: ["react", "react-hooks", "jsx-a11y", "prettier"],
-    overrides: [
-        {
-            files: ["*.mdx"],
-            extends: ["plugin:mdx/recommended"],
-            rules: {
-                "react/jsx-indent": 0,
-            },
-        },
-    ],
 };
